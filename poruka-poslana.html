@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hvala Vam!</title>
+	
+	<!-- BOOTSTRAP -->
+	<link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+    <!-- BOOTSTRAP -->
+	
+	<!-- ADDON FILES -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<!-- ADDON FILES -->
+	
+	<!-- STYLE -->
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<!-- STYLE -->
+	
+    <!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- AOS -->
+	
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- FONT AWESOME -->
+	
+	<!-- FONT GOOGLE -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<!-- FONT GOOGLE -->
+	
+    <!-- Custom style -->
+	<style>
+	body {
+	overflow: hidden;
+    }
+
+    /* Preloader */
+    #preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff; /* change if the mask should have another color then white */
+	z-index:99; /* makes sure it stays on top */
+    }
+
+    #status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	background-image:url(images/spinner.svg); /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
+    }
+	</style>
+	<!-- Custom style -->
+	<style type="text/css">
+
+body.offcanvas-active{
+	overflow:hidden;
+}
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: white;
+    transition: visibility .2s ease-in-out, transform .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
+
+</style>
+</head>
+
+<body>
+	<div class="jumbotron text-center">
+  <h1 class="display-3">Hvala Vam!</h1>
+  <p class="lead"><strong>Vaš mail je uspješno poslan!</strong> Odgovorit ćemo Vam u što kraćem vremenskom roku!</p>
+  <hr>
+  <p class="lead">
+    <a class="btn btn-primary btn-sm" role="button" onclick="goBack()"> < Nazad</a>
+  </p>
+</div>
+	
+	<script>
+	function goBack() {
+  window.history.back();
+}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+<!-- jQuery Plugin -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
+          })
+    //]]>
+</script>
+</body>
+</html>

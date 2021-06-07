@@ -1,0 +1,369 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>O školi | JU OŠ "Velešićki heroji"</title>
+	
+	<!-- BOOTSTRAP -->
+	<link href="../css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+    <!-- BOOTSTRAP -->
+	
+	<!-- ADDON FILES -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+	<!-- ADDON FILES -->
+	
+	<!-- STYLE -->
+	<link href="../css/style.css" rel="stylesheet" type="text/css">
+	<!-- STYLE -->
+	
+    <!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- AOS -->
+	
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- FONT AWESOME -->
+	
+	<!-- FONT GOOGLE -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<!-- FONT GOOGLE -->
+	
+    <!-- Custom style -->
+	<style>
+	body {
+	overflow: hidden;
+    }
+
+    /* Preloader */
+    #preloader {
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color:#fff; /* change if the mask should have another color then white */
+	z-index:99; /* makes sure it stays on top */
+    }
+
+    #status {
+	width:200px;
+	height:200px;
+	position:absolute;
+	left:50%; /* centers the loading animation horizontally one the screen */
+	top:50%; /* centers the loading animation vertically one the screen */
+	background-image:url(images/spinner.svg); /* path to your loading animation */
+	background-repeat:no-repeat;
+	background-position:center;
+	margin:-100px 0 0 -100px; /* is width and height divided by two */
+    }
+	</style>
+	<!-- Custom style -->
+	<style type="text/css">
+
+body.offcanvas-active{
+	overflow:hidden;
+}
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: white;
+    transition: visibility .2s ease-in-out, transform .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
+
+</style>
+</head>
+
+<body>
+		<!-- Preloader -->
+<div id="preloader">
+	<div id="status">&nbsp;</div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <a class="navbar-brand" href="../index.html"><img src="../images/logo-transparent.png"></a>
+  <button class="navbar-toggler" type="button" data-trigger="#main_nav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse" id="main_nav">
+    <div class="offcanvas-header mt-3">  
+      <button class="btn btn-outline-danger btn-close float-right"> &times </button>
+      <h5 class="py-2 text-white"></h5>
+    </div>
+    <ul class="navbar-nav ml-auto">
+      <center><li class="nav-item"> <a class="nav-link" href="../index.html">Početna</a> </li></center>
+      <center>
+      <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            O školi
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <li><a class="dropdown-item active" href="../o-skoli/">Ko smo mi?</a></li>
+               <li class="dropdown-submenu">
+               <a class="dropdown-item dropdown-toggle" href="#">Uposlenici</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../o-skoli/uprava.html">Uprava</a></li>
+                    <li><a class="dropdown-item" href="../o-skoli/razredna.html">Razredna nastava</a></li>
+                    <li><a class="dropdown-item" href="../o-skoli/predmetna.html">Predmetna nastava</a></li>
+                    <li><a class="dropdown-item" href="../o-skoli/tehnicko_osoblje.html">Tehničko osoblje</a></li>
+                    </ul>
+               </li>
+            </ul>
+      </li>
+	  </center>
+      <center><li class="nav-item"><a class="nav-link" href="../novosti/">Novosti</a></li></center>
+      <center><li class="nav-item"><a class="nav-link" href="../obavjestenja/">Obavještenja</a></li></center>
+	  <center>
+      <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Nastava
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+               <li class="dropdown-submenu">
+			   <li><a class="dropdown-item" href="https://office.com">Office 365</a></li>
+               <li><a class="dropdown-item dropdown-toggle" href="#">Za roditelje</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../za-roditelje/vijece-roditelja.html">Vijeće roditelja</a></li>
+                    <li><a class="dropdown-item" href="../za-roditelje/informacije.html">Informacije</a></li>
+                    <li><a class="dropdown-item" href="../za-roditelje/konsultacije.html">Konsultacije</a></li>
+                    <li><a class="dropdown-item" href="../za-roditelje/prava-i-obaveze.html">Prava i obaveze</a></li>
+                    </ul>
+               </li>
+               <li class="dropdown-submenu">
+               <a class="dropdown-item dropdown-toggle" href="#">Za učenike</a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../za-ucenike/vijece-ucenika.html">Vijeće učenika</a></li>
+                    <li><a class="dropdown-item" href="../za-ucenike/raspored-pismenih-provjera-znanja-razredna-nastava.pdf">Raspored pismenih <br>provjera znanja - <br>razredna nastava</a></li>
+				    <li><a class="dropdown-item" href="../za-ucenike/raspored-pismenih-provjera-znanja-predmetna-nastava.pdf">Raspored pismenih<br> provjera znanja - <br>predmetna nastava</a></li>
+                    </ul>
+               </li>
+            </ul>
+      </li>
+	  </center>    
+    <center><li class="nav-item"><a class="nav-link" href="../pravilnici/">Pravilnici</a></li></center>
+	  <center><li class="nav-item"><a class="nav-link" href="../javne-nabavke/">Javne nabavke</a></li></center>
+      
+	  <center><li class="nav-item"><a class="nav-link" href="../kontakt/">Kontakt</a></li></center>
+    </ul>
+  </div>
+</nav>
+	
+	<div class="about-header-overlay" data-aos="fade-right">
+	<div class="about-header">
+	<b><h1 class="text-white container" style="font-family: 'Raleway', sans-serif; font-size: 60px; padding-top: 100px;">O NAMA</h1></b>
+	</div>
+	</div>
+	
+	<div class="container" data-aos="fade-right">
+	<div class="card-deck">
+	
+	  <div class="card col-md-6 bg-transparent" style="border-top: 0px; border-bottom: 0px; border-right: 0px; border-left: 0px; font-family: 'Raleway', sans-serif"> 
+		  <div class="card-header bg-transparent">
+		  <h3><b>O NAMA</b></h3>
+		  </div>
+		  <div class="card-body">
+		    <p class="card-text">Osnovna škola „Velešićki heroji“ sagrađena je 1998. godine. Radovi na izgradnji škole započeli su 24.8.1996. godine.
+Osnivač škole je Općina Novo Sarajevo. Upisana u registar škola br. 05-610-43/98. Registrirana je kod Kantonalnog suda Sarajevo broj rješenja: UF/I 2681/96 od 1.12.1998. godine. Registarski broj subjekta upisa: 2-14.
+Stanovnici naselja Velešići dugi niz godina priželjkivali su školu. Zahvaljujući pomoći dobrih ljudi i razumijevanja Ministarstva za obrazovanje, nauku, kulturu i sport sagrađen je savremeno opremljen objekat.
+<br><br>
+Škola je započela svoju odgojno-obrazovnu misiju 1.9.1998. godine.</p>
+		    </div>
+	  </div>
+		
+	  <div class="card col-md-6 bg-transparent" style="border-top: 0px; border-bottom: 0px; border-right: 0px; border-left: 0px; font-family: 'Raleway', sans-serif"> 
+		  <div class="card-header bg-transparent">
+		  <h3><b>MISIJA I VIZIJA ŠKOLE</b></h3>
+		  </div>
+		  <div class="card-body">
+		    <p class="card-text">Danas u procesu tranzicije, u procesu promjena širokih razmjera, težimo uhvatiti korak sa svjetskim standardima i zakonitostima. Škola je u proteklom periodu postala poznata prema postignućima svojih učenika/ca i uposlenika/ca, njihovoj originalnosti i kreativnosti. Škola se opredjelila da ima aktivnu ulogu u društvenom okruženju. Nastojimo biti demokratska škola, bliska životu, u kojoj je ugodno učiti i raditi. Omogućiti učenicima da u ozračju tolerancije i saradničkih odnosa steknu kompetencije potrebne za daljnje školovanje i uključivanje u svijet rada i društvo znanja. Red, rad, etičko djelovanje su najvažnija mjerila kvalitete čovjeka, a to su naše vrijednosti.</p>
+		    </div>
+	  </div>
+		
+    </div>
+	</div>
+	
+	<div class="jumbotron container bg-transparent">
+	<h1>INFORMACIJE O ŠKOLI</h1>
+	<hr>
+	<div class="card-deck">
+	  <div class="card col-md-4 bg-transparent" style="border-top: 0px; border-bottom: 0px; border-right: 0px; border-left: 0px;">
+	    <div class="card-body">
+	      <h3 class="card-title"><b><img src="../images/skola-icon-awesome.png" width="64">NAZIV</b></h3><hr>
+	      <p class="card-text container">JU OŠ "Velešićki heroji"</p>
+			<br><br>
+			<h3 class="card-title"><b><i class="fa fa-map-marker"></i>Adresa</b></h3><hr>
+	      <p class="card-text container">Velešići 2, Sarajevo</p>
+			<div class="embed-responsive embed-responsive-21by9">
+				<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11505.627441528122!2d18.3969307!3d43.8681212!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb653a82bb3f76415!2zVmVsZcWhacSHa2kgaGVyb2pp!5e0!3m2!1sbs!2sba!4v1591646398576!5m2!1sbs!2sba" width="600" height="500" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+			</div>
+			<br><br>
+			<h3 class="card-title"><b><i class="fa fa-phone"></i>Telefon</b></h3><hr>
+	      <p class="card-text container"><a href="telto:+38733214584">+ 387 33 214 584</a></p>
+			<br><br>
+		  <h3 class="card-title"><b><i class="fa fa-envelope"></i>E-mail</b></h3><hr>
+	      <p class="card-text container"><a href="mailto:osvh@bih.net.ba">osvh@bih.net.ba</a></p>
+	      </div>
+      </div>
+		
+	  <div class="card col-md-4 bg-transparent ml-auto" style="border-top: 0px; border-bottom: 0px; border-right: 0px; border-left: 0px;"> 
+		  <img class="card-img-top" src="../images/skola3.jpg" alt="Card image cap">
+	    <div class="card-body">
+	      </div>
+      </div>
+    </div>
+	</div>
+			
+			<div class="container-fluid bg-light"><br><br>
+			<div class="card-deck">
+
+			  <div class="card col-md-4 bg-transparent" style="border-top: 0px; border-bottom: 0px; border-right: 0px; border-left: 0px;">
+				<div class="card-header bg-transparent">
+				<b>O ŠKOLI</b>
+				</div>
+			    <div class="card-body">
+			      <p class="card-text">Osnovna škola „Velešićki heroji“ sagrađena je 1998. godine. Radovi na izgradnji škole započeli su 24.8.1996. godine.<br>
+Osnivač škole je Općina Novo Sarajevo. Upisana u registar škola br. 05-610-43/98. Registrirana je kod Kantonalnog suda Sarajevo broj rješenja: UF/I 2681/96 od 1.12.1998. godine. Registarski broj subjekta upisa: 2-14.</p>
+			      </div>
+		      </div>
+				
+				<div class="card col-md-4 bg-transparent" style="border-top: 0px; border-bottom: 0px; border-right: 0px; border-left: 0px;">
+				<div class="card-header bg-transparent">
+				<b>KORISNI LINKOVI</b>
+				</div>
+			    <div class="card-body">
+			      <li class="useful-links"><a class="link-useful" href="http://porodicno.ba"><b><i class="fa fa-angle-right"></i></b> KJU "Porodično Savjetovalište"</a></li>
+					<div class="dropdown-divider"></div>
+				  <li class="useful-links"><a class="link-useful" href="http://www.judzks.ba/Slu%C5%BEbe/Centarzamentalnozdravlje.aspx"><b><i class="fa fa-angle-right"></i></b> Centar za mentalno zdravlje</a></li>
+					<div class="dropdown-divider"></div>
+				  <li class="useful-links"><a class="link-useful" href="http://www.sigurnodijete.ba"><b><i class="fa fa-angle-right"></i></b> Sigurno dijete</a></li>
+			      </div>
+		      </div>
+				
+				<div class="card col-md-4 bg-transparent" style="border-top: 0px; border-bottom: 0px; border-right: 0px; border-left: 0px;">		
+			    <div class="card-body">
+			      <a href="http://mon.ks.gov.ba"><img src="../images/mon-ks.png" width="300"></a><br><br><br>
+			      <a href="http://novosarajevo.ba"><img src="../images/opcina-novo-sarajevo.png" width="150"></a><br>
+			      <a href="http://britishcouncil.ba"><img src="../images/logo-british-council.png" width="250"></a>
+			      </div>
+		      </div>
+            </div>
+			</div>
+			
+ <!-- Site footer -->
+    <footer class="container-fluid site-footer bg-logo mx-auto text-center" style="color: white; font-family: 'Raleway', sans-serif">
+      <div class="container">
+            <p class="text-center">Copyright © 2020 <a class="footer-text-osvh" href="http://osvh.edu.ba" style="color: white;">JU OŠ "Velešićki heroji"</a>| Developed by <a href="mailto:garcevicamar@gmail.com" style="color: white;">Amar Garčević</a>
+            </p>
+        </div>
+</footer>
+	
+	
+			<script>
+			var a = 0;
+$(window).scroll(function() {
+  var oTop = $('#counter').offset().top - window.innerHeight;
+  if (a == 0 && $(window).scrollTop() > oTop) {
+    $('.counter-value').each(function() {
+      var $this = $(this),
+        countTo = $this.attr('data-count');
+      $({
+        countNum: $this.text()
+      }).animate({
+          countNum: countTo
+        },
+        {
+          duration: 2000,
+          easing: 'swing',
+          step: function() {
+            $this.text(Math.floor(this.countNum));
+          },
+          complete: function() {
+            $this.text(this.countNum);
+            //alert('finished');
+          }
+        });
+    });
+    a = 1;
+  }
+});
+			</script>
+<script>
+$('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 4000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});			
+</script>
+	<script>
+  AOS.init();
+</script>
+<script type="text/javascript">
+/// some script
+$(function () {
+	  'use strict'
+
+	$("[data-trigger]").on("click", function(){
+        var trigger_id =  $(this).attr('data-trigger');
+        $(trigger_id).toggleClass("show");
+        $('body').toggleClass("offcanvas-active");
+    });
+
+    // close if press ESC button 
+    $(document).on('keydown', function(event) {
+        if(event.keyCode === 27) {
+           $(".navbar-collapse").removeClass("show");
+           $("body").removeClass("overlay-active");
+        }
+    });
+
+    // close button 
+    $(".btn-close").click(function(e){
+        $(".navbar-collapse").removeClass("show");
+        $("body").removeClass("offcanvas-active");
+    }); 
+
+
+})
+</script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="../js/script.js"></script>
+<!-- jQuery Plugin -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<!-- Preloader -->
+<script type="text/javascript">
+    //<![CDATA[
+        $(window).on('load', function() { // makes sure the whole site is loaded 
+            $('#status').fadeOut(); // will first fade out the loading animation 
+            $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+            $('body').delay(350).css({'overflow':'visible'});
+          })
+    //]]>
+</script>
+</body>
+</html>
